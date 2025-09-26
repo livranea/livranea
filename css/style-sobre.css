@@ -1,0 +1,75 @@
+ body {
+   margin: 0;
+   font-family: 'Poppins', sans-serif;
+   background-color: #d3b0d3;
+   color: #2d2d2d;
+   text-align: center;
+ }
+
+ h1 {
+   margin: 0;
+   margin-top: 50px;
+   margin-bottom: 10px;
+   font-size: 50px;
+   font-weight: bold;
+   color: #2c1b2e;
+ }
+
+ .container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 30px 20px 60px;
+   gap: 40px;
+ }
+
+ .card2 {
+   display: flex;
+   align-items: center;
+   max-width: 900px;
+   width: 100%;
+   border-radius: 10px;
+   padding: 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   gap: 20px;
+ }
+
+ .card2 img {
+   width: 100px;
+   height: auto;
+ }
+
+ .info {
+   text-align: left;
+   font-size: 14px;
+   line-height: 1.6;
+ }
+
+ .green {
+   background-color: #b0c9a0;
+ }
+
+ .blue {
+   background-color: #a3d1e2;
+ }
+
+ .pink {
+   background-color: #f5a1ad;
+ }
+
+ .name {
+   font-weight: bold;
+   font-size: 16px;
+ }
+
+ @media (max-width: 768px) {
+   .card {
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+   }
+
+   .info {
+     text-align: center;
+   }
+ }

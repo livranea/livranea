@@ -1,0 +1,91 @@
+.linha {
+  border-top: 2px solid #ffffff80;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.perfil-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* 🔹 permite quebrar em telas pequenas */
+}
+
+.perfil-foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.perfil-info {
+  flex-grow: 1;
+  min-width: 200px; /* 🔹 garante espaço mínimo */
+}
+
+.perfil-info h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.perfil-info p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.distintivos {
+  margin-top: 10px;
+}
+
+.distintivos img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.biografia {
+  margin-top: 30px;
+  font-size: 1.1em;
+  color: #512c5d;
+}
+
+/* 🔹 Ajustes de responsividade */
+@media (max-width: 768px) {
+  .perfil-box {
+    flex-direction: column; /* foto em cima, info embaixo */
+    text-align: center;
+  }
+
+  .perfil-info h3 {
+    font-size: 1.3em;
+  }
+
+  .perfil-info p {
+    font-size: 1em;
+  }
+
+  .perfil-foto {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .perfil-box {
+    gap: 15px;
+  }
+
+  .perfil-info h3 {
+    font-size: 1.2em;
+  }
+
+  .perfil-info p {
+    font-size: 0.95em;
+  }
+
+  .biografia {
+    font-size: 1em;
+  }
+}

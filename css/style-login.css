@@ -1,0 +1,293 @@
+    .container {
+      position: relative;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid #ffffff99;
+      border-radius: 20px;
+      padding: 40px 30px 30px;
+      width: 100%;
+      max-width: 360px;
+      backdrop-filter: blur(10px);
+    }
+
+    .container2 {
+      position: relative;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid #ffffff99;
+      border-radius: 20px;
+      padding: 40px 30px 30px;
+      width: 100%;
+      backdrop-filter: blur(10px);
+      max-width: 750px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .icon-top {
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-top::before {
+      content: '\1F464';
+      /* Unicode for person icon */
+      font-size: 36px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #2c1b2e;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    h2 {
+      text-align: center;
+      color: #4e3d50;
+      margin-bottom: 30px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .register {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #e5e5e5;
+      font-size: 14px;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      margin-bottom: 20px;
+      color: #2d2d2d;
+    }
+
+    .checkbox-container input {
+      margin-right: 8px;
+    }
+
+    .btn-color {
+      width: 100%;
+      background: linear-gradient(to right, #2c1b2e, #000000);
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    a[name="sair"] {
+      width: 100%;
+      background: linear-gradient(to right, #db0000, #690000);
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    a[name="novasenha"] {
+      width: 100%;
+      background: linear-gradient(to right, #6f4374, #341f36);
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .login-text {
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .login-text a {
+      font-weight: bold;
+      text-decoration: none;
+      color: #2c1b2e;
+    }
+
+    .login-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      /* permite quebrar no mobile */
+      gap: 100px;
+      padding: 12%;
+    }
+
+    .login-info {
+      max-width: 400px;
+      color: #3d1f36;
+    }
+
+    .login-info h1 {
+      font-size: 48px;
+      margin-bottom: 0;
+      font-weight: 900;
+    }
+
+    .login-info h2 {
+      font-size: 36px;
+      font-weight: 400;
+      color: #8e6b90;
+      margin-top: -10px;
+    }
+
+    .login-info p {
+      margin-top: 20px;
+      border-left: 2px solid #3d1f36;
+      padding-left: 16px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .form-section {
+      flex: 1 1 60%;
+      padding-right: 30px;
+    }
+
+    .form-section h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #2d122e;
+    }
+
+    .form-group {
+      margin-bottom: 30px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #2d122e;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid #2d122e;
+      background: transparent;
+      padding: 8px;
+      font-size: 16px;
+      color: #2d122e;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #000;
+    }
+
+    .info-section {
+      flex: 1 1 35%;
+      padding-top: 60px;
+      color: #2d122e;
+      text-align: center;
+    }
+
+    .info-section h2 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .info-section p {
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+
+    .icon-top {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .file-input {
+      display: none;
+    }
+
+    .preview-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .capa-container {
+      width: 180px;
+      height: 260px;
+      border: 2px dashed #ccc;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: #fff;
+      cursor: pointer;
+      position: relative;
+      margin: 15px auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+
+    .capa-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+      /* escondida até que escolha a capa */
+    }
+
+    .capa-placeholder {
+      font-size: 14px;
+      color: #999;
+      position: absolute;
+      text-align: center;
+      pointer-events: none;
+    }
+
+    .capa-input {
+      display: none;
+    }

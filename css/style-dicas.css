@@ -1,0 +1,41 @@
+ .accordion-item {
+     border: none !important;
+     border-radius: 12px !important;
+     overflow: hidden;
+     /* impede o fundo branco de aparecer */
+     background: transparent !important;
+ }
+
+ .accordion-button {
+     background-color: #7b5e7b !important;
+     color: #fff !important;
+     border: none;
+     border-radius: 12px !important;
+     box-shadow: none !important;
+ }
+
+ .accordion-button:not(.collapsed) {
+     background-color: #6b516b !important;
+     color: #fff !important;
+ }
+
+ .accordion-button::after {
+     filter: invert(1) brightness(200%);
+     /* deixa sempre branquinha */
+ }
+
+ .accordion-body {
+     background: #f8f0f8;
+     border-radius: 0 0 12px 12px;
+     padding: 15px;
+ }
+
+ .image-box img {
+     width: 100%;
+     border-radius: 12px;
+ }
+
+ a {
+     text-decoration: none;
+     color: #7b5e7b;
+ }
